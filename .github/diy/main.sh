@@ -23,10 +23,10 @@ function merge_package() {
     done
     cd "$rootdir"
 }
-merge_package main https://github.com/kiddin9/openwrt-packages tinyfecvpn tinyfecvpn
-merge_package main https://github.com/kiddin9/openwrt-packages luci-app-tinyfecvpn luci-app-tinyfecvpn
-merge_package main https://github.com/kiddin9/openwrt-packages tinyportmapper tinyportmapper
-merge_package main https://github.com/kiddin9/openwrt-packages luci-app-tinyfilemanager luci-app-tinyfilemanager
+merge_package master https://github.com/kiddin9/openwrt-packages . tinyfecvpn
+merge_package master https://github.com/kiddin9/openwrt-packages . luci-app-tinyfecvpn
+merge_package master https://github.com/kiddin9/openwrt-packages . tinyportmapper
+merge_package master https://github.com/kiddin9/openwrt-packages . luci-app-tinyfilemanager
 
 
 #function git_clone() {
