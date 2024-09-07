@@ -16,7 +16,9 @@ function mvdir() {
 mv -n `find $1/* -maxdepth 0 -type d` ./
 rm -rf $1
 }
-git clone --depth 1 https://github.com/mgz0227/OP-Packages tinyfecvpn1 && mv -n tinyfecvpn1/tinyfecvpn ./;rm -rf tinyfecvpn1
-git clone --depth 1 https://github.com/mgz0227/OP-Packages tinyfecvpn2 && mv -n tinyfecvpn2/luci-app-tinyfecvpn  ./; rm -rf tinyfecvpn2
+git clone --depth 1 https://github.com/kiddin9/openwrt-packages tinyfecvpn1 && mv -n tinyfecvpn1/tinyfecvpn ./;rm -rf tinyfecvpn1
+git clone --depth 1 https://github.com/kiddin9/openwrt-packages tinyfecvpn2 && mv -n tinyfecvpn2/luci-app-tinyfecvpn  ./; rm -rf tinyfecvpn2
+git clone --depth 1 https://github.com/kiddin9/openwrt-packages tinyportmapper1 && mv -n tinyportmapper1/tinyportmapper ./;rm -rf tinyportmapper1
+git clone --depth 1 https://github.com/kiddin9/openwrt-packages tinyportmapper2 && mv -n tinyportmapper2/luci-app-tinyfilemanager ./; rm -rf tinyportmapper2
 
 exit 0
