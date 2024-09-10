@@ -55,6 +55,9 @@ jobs:
       env: 
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
       run: |
+        if [ -e $GITHUB_WORKSPACE/luci-app-tinyfecvpn ]; then
+          cp -r $GITHUB_WORKSPACE/luci-app-tinyfecvpn $GITHUB_WORKSPACE/${{matrix.target}}
+        fi      
         if [ -e $GITHUB_WORKSPACE/LICENSE ]; then
           cp $GITHUB_WORKSPACE/LICENSE $GITHUB_WORKSPACE/${{matrix.target}}
         fi
